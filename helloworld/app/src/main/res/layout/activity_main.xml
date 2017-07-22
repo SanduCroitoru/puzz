@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    tools:context="com.example.sanducu.helloworld.MainActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background= "@mipmap/background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#5D52CE">
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/scor"
+        android:layout_alignEnd="@+id/scor"
+        android:id="@+id/level"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/scor"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:id="@+id/reset"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@android:drawable/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onclickReset" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/solution"
+        android:layout_marginTop="25dp"
+        android:id="@+id/image_solution"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.6" />
+
+    <TextView
+        android:text="Level :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/label_moves"
+        android:layout_alignRight="@+id/label_moves"
+        android:layout_alignEnd="@+id/label_moves" />
+
+    <TextView
+        android:text="Remaining moves :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:id="@+id/label_moves"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/reset"
+        android:layout_toEndOf="@+id/reset" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:text=""
+            android:id="@+id/button3"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+
+        <Button
+            android:text=""
+            android:id="@+id/button5"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+
+        <Button
+            android:text=""
+            android:id="@+id/button6"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+        <Button
+            android:text=""
+            android:id="@+id/button7"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+        <Button
+            android:text=""
+            android:id="@+id/button8"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />/>
+
+        <Button
+            android:text=""
+            android:id="@+id/button9"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+
+        <Button
+            android:text=""
+            android:id="@+id/button4"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+
+        <Button
+            android:text=""
+            android:id="@+id/button2"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+
+        <Button
+            android:text=""
+            android:id="@+id/button1"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:onClick="onClickButton"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="@mipmap/btcube" />
+
+
+    </GridLayout>
+</RelativeLayout>
